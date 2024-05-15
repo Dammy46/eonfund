@@ -1,0 +1,45 @@
+@font-face {
+  font-family: hoves-bold;
+  src: url(../public/TTHoves-Bold.ttf);
+}
+@font-face {
+  font-family: hoves-demibold;
+  src: url(../public/TTHoves-Demibold.ttf);
+}
+@font-face {
+  font-family: hoves-medium;
+  src: url(../public/TTHoves-Medium.ttf);
+}
+@font-face {
+  font-family: hoves-regular;
+  src: url(../public/TTHoves-regular.ttf);
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  overflow-x: hidden;
+  font-family: hoves-regular, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+body::-webkit-scrollbar {
+  width: 0;
+}
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+}
+img {
+  width: 100%;
+  height: auto;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}

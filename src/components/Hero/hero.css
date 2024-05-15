@@ -1,0 +1,267 @@
+.app-hero {
+  min-height: 100vh;
+  background-image: url(../../assets/images/building.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  position: relative;
+  background-size: cover;
+  background-color: #0083af;
+  padding-bottom: 3.5rem;
+}
+.building {
+  position: absolute;
+  bottom: 0;
+  background-image: url(../../assets/images/building.png);
+  background-position: top;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  width: 100%;
+  content: "";
+  z-index: 1;
+  display: none;
+}
+.app-hero::before {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 50%;
+  height: 100%;
+  background-color: #0a244030;
+  top: -175px;
+  right: 0;
+  filter: blur(39px);
+  transform: rotate(166deg);
+}
+
+.hero-content {
+  padding-top: 5rem;
+  padding-bottom: 14.5rem;
+  position: relative;
+  z-index: 1;
+}
+.hero-content h2 {
+  font-size: 70px;
+  line-height: 70px;
+}
+.hero-content h2,
+.hero-title h2 {
+  color: #ffffff;
+  font-family: hoves-demibold, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-align: center;
+  position: relative;
+}
+.hero-title {
+  position: absolute;
+  top: 160px;
+  left: 0;
+  right: 0;
+  margin: auto;
+  display: none;
+}
+.hero-title h2 {
+  font-size: 100px;
+
+  line-height: 100px;
+}
+.hero-title h2:last-child {
+  z-index: 1;
+}
+.hero-info {
+  margin-top: 3.5rem;
+  flex-direction: column;
+  gap: 40px;
+}
+.hero-desc {
+  font-size: 22px;
+  color: #ffffff;
+  width: auto;
+  text-align: center;
+}
+.apply-fund-btn button {
+  background-color: #ffffff;
+  border: none;
+  outline: none;
+  border-radius: 70px;
+  flex-wrap: nowrap;
+  color: #0a2440;
+  font-size: 18px;
+  font-family: hoves-regular, sans-serif;
+  padding: 18px;
+  gap: 12px;
+  cursor: pointer;
+  font-weight: 600;
+  position: relative;
+  transition: all 0.4s ease-in;
+}
+.apply-fund-btn button span {
+  position: relative;
+  z-index: 1;
+  text-wrap: nowrap;
+  transition: color 0.4s linear;
+}
+.apply-fund-btn button:hover {
+  color: #ffffff;
+  background: none;
+}
+.apply-fund-btn button svg {
+  z-index: 1;
+  transition: all 0.3s ease-in-out;
+}
+.apply-fund-btn button:hover svg {
+  transform: rotate(45deg);
+}
+#scroll-btn {
+  position: absolute;
+  height: 63px;
+  width: 38px;
+  border: 1px solid #ffffff;
+  margin: auto;
+  left: 0;
+  right: 0;
+  bottom: 8.2em;
+  border-radius: 3em;
+  z-index: 10;
+  cursor: pointer;
+}
+#scroll-btn::before {
+  position: absolute;
+  content: "";
+  margin: auto;
+  left: 0;
+  right: 0;
+  height: 8px;
+  width: 8px;
+  top: 10px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  animation: move-down 2s infinite;
+}
+#scroll-btn::after {
+  position: absolute;
+  content: "Scroll to explore";
+  font-size: 16px;
+  color: #ffffff;
+  width: 118px;
+  text-align: center;
+  left: -2.2em;
+  bottom: -1.5em;
+}
+@media (max-width: 360px) {
+  .hero-content h2 {
+    font-size: 58px;
+  }
+}
+@media (max-width: 427px) {
+  .hero-info {
+    margin-top: 1.5rem;
+  }
+}
+@media (min-width: 1024px) {
+  #scroll-btn {
+    bottom: 8.2em;
+  }
+  .hero-content {
+    padding-bottom: 0;
+    margin-top: 9.5rem;
+
+    z-index: 3;
+  }
+  .hero-content h2 {
+    display: none;
+  }
+  #scroll-btn {
+    bottom: 6.2rem;
+  }
+  .hero-title {
+    display: block;
+  }
+  .hero-title h2 {
+    font-size: 122px;
+    line-height: 106px;
+  }
+  .hero-info {
+    flex-direction: row;
+  }
+  .hero-desc {
+    width: 440px;
+    text-align: left;
+  }
+  .apply-fund-btn button {
+    font-size: 24px;
+    padding: 30px 25px;
+  }
+  .hero-content {
+    padding-top: 3.5rem;
+    margin-top: 16.5rem;
+  }
+  .hero-title {
+    top: 130px;
+  }
+  .building {
+    display: block;
+  }
+  .hero-title h2 {
+    font-size: 130px;
+    line-height: 130px;
+  }
+}
+@media (min-width: 1536px) {
+  #scroll-btn {
+    bottom: 8.2em;
+  }
+  .hero-content {
+    padding-bottom: 0;
+    margin-top: 9.5rem;
+
+    z-index: 3;
+  }
+  .hero-title {
+    display: block;
+  }
+  .hero-content h2 {
+    display: none;
+  }
+  #scroll-btn {
+    bottom: 6.2rem;
+  }
+  .hero-title h2 {
+    font-size: 130px;
+    line-height: 130px;
+  }
+  .building {
+    display: block;
+  }
+  .hero-title {
+    top: 155px;
+  }
+  .hero-title h2 {
+    font-size: 140px;
+    line-height: 140px;
+  }
+  .hero-info {
+    flex-direction: row;
+  }
+  .hero-desc {
+    width: 440px;
+    text-align: left;
+  }
+  .apply-fund-btn button {
+    font-size: 24px;
+    padding: 30px 25px;
+  }
+  .hero-content {
+    padding-top: 3.5rem;
+    margin-top: 16.5rem;
+  }
+}
+@keyframes move-down {
+  80% {
+    opacity: 0.5;
+  }
+  100% {
+    transform: translateY(2.2em);
+    opacity: 0;
+  }
+}

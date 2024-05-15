@@ -1,0 +1,148 @@
+.app-portfolio {
+  min-height: 100vh;
+  background-image: url(../../assets/images/webBg.png);
+  background-repeat: no-repeat;
+  background-color: #000000;
+  background-size: cover;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  z-index: 2;
+  margin-top: -55px;
+  padding-top: 6rem;
+  padding-bottom: 8rem;
+}
+.portfolio-title {
+  color: #ffffff;
+  font-size: 32px;
+  width: auto;
+}
+.portfolio-desc {
+  font-size: 18px;
+  color: #afafaf;
+  width: auto;
+  margin-top: 30px;
+}
+.divider {
+  margin-bottom: 4.5rem;
+  height: 1px;
+  width: 100%;
+  background-color: rgb(255 255 255 / 20%);
+}
+.investment-wrap {
+  margin-top: 5rem;
+  position: relative;
+}
+.invest-content {
+  flex-direction: column;
+}
+.invest-tag {
+  color: rgb(255 255 255 / 60%);
+  font-size: 18px;
+}
+.infos-title {
+  margin-top: 1.5rem;
+  font-size: 35px;
+  font-family: hoves-demibold, sans-serif;
+  color: #ffffff;
+  width: auto;
+}
+.infos-title span {
+  color: #729a59;
+}
+.invest-infos,
+.invest-companies {
+  width: 100%;
+}
+.invest-infos .join-btn {
+  margin-top: 2.5rem;
+  padding: 25px;
+}
+.companies-grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  row-gap: 15px;
+  column-gap: 20px;
+}
+.company-grid-item {
+  background-color: #0c0c0c;
+  border-radius: 20px;
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.grid-logo {
+  width: 153px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.3s ease-in-out;
+}
+.company-grid-item:hover .grid-logo {
+  filter: invert(1);
+}
+.company-grid-item:last-child:hover .grid-logo {
+  filter: brightness(5);
+}
+.invest-content {
+  gap: 30px;
+}
+@media (max-width: 428px) {
+  .app-portfolio {
+    margin-top: -28px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+}
+@media (max-width: 380px) {
+  .app-portfolio {
+    margin-top: -45px;
+  }
+}
+@media (max-width: 320px) {
+  .app-portfolio {
+    margin-top: -55px;
+  }
+}
+@media (min-width: 1024px) {
+  .portfolio-title {
+    font-size: 52px;
+    width: 865px;
+  }
+  .portfolio-desc {
+    font-size: 24px;
+    width: 591px;
+  }
+  .companies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .invest-content {
+    flex-direction: row;
+  }
+  .infos-title {
+    width: 363px;
+  }
+}
+@media (min-width: 1536px) {
+  .portfolio-title {
+    font-size: 52px;
+    width: 865px;
+  }
+  .portfolio-desc {
+    font-size: 24px;
+    width: 591px;
+  }
+  .companies-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .invest-content {
+    flex-direction: row;
+  }
+  .infos-title {
+    width: 363px;
+  }
+}

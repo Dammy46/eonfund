@@ -1,0 +1,257 @@
+.app-footer {
+  min-height: 100vh;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  background-color: #ffffff;
+  padding-top: 7rem;
+  position: relative;
+  z-index: 2;
+  margin-top: -38px;
+}
+.top {
+  flex-direction: column;
+}
+.footer-infos {
+  width: 100%;
+}
+.footer-title {
+  font-size: 32px;
+  color: #0a2440;
+  text-align: center;
+}
+.footer-desc {
+  color: #565656;
+  font-size: 22px;
+  width: auto;
+  margin-top: 10px;
+  text-align: center;
+}
+.form-wrap {
+  width: auto;
+  margin-top: 30px;
+  gap: 30px;
+  flex-direction: column;
+}
+.input-wrap {
+  border: 1px solid #c3c3c3;
+  border-radius: 70px;
+  height: 47px;
+  display: flex;
+  padding: 12px 12px 12px 30px;
+  width: auto;
+  gap: 10px;
+}
+.input-wrap input {
+  border: none;
+  outline: none;
+  flex: 1;
+  font-size: 18px;
+}
+.input-wrap input:focus,
+.input-wrap input:active,
+.input-wrap button {
+  border: none;
+  outline: none;
+}
+.input-wrap button {
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background-color: #0a2440;
+  border: none;
+  color: #ffffff;
+  justify-content: center;
+}
+
+.input-wrap button svg {
+  width: 30px;
+  height: 30px;
+  transform: rotate(-35deg);
+  transition: all 0.3s ease-in-out;
+}
+.input-wrap button:hover svg {
+  transform: rotate(0deg);
+}
+.vertical {
+  height: 70px;
+  width: 1px;
+  background-color: rgb(10 36 64 / 30%);
+  display: none;
+}
+.join-discord {
+  gap: 10px;
+}
+.join-discord svg {
+  width: 55px;
+  height: 55px;
+  fill: #0a2440;
+}
+.discord-text {
+  width: 141px;
+  color: #565656;
+  font-size: 16px;
+}
+.footer-links {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.footer-links-wrap {
+  padding-top: 50px;
+  display: flex;
+  flex-direction: column;
+  width: auto;
+  justify-content: center;
+  align-items: center;
+}
+.footer-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 15px;
+  font-size: 48px;
+  width: 100%;
+  justify-content: center;
+}
+.footer-link svg {
+  width: 20px;
+  height: 20px;
+  fill: #729a59;
+  transform: rotate(-35deg);
+  transition: all 0.3s ease-in-out;
+}
+.footer-link:hover svg {
+  transform: rotate(0deg);
+}
+.center {
+  margin: 3rem 0;
+}
+.footer-logo {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.footer-divider {
+  height: 1px;
+  width: 100%;
+  background-color: rgb(10 36 64 / 20%);
+  margin: 1.5rem 0;
+}
+.bottom {
+  padding-bottom: 2rem;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.copyright {
+  color: #656565;
+  font-size: 18px;
+}
+.regulation {
+  gap: 30px;
+  flex-direction: column;
+}
+.policy,
+.terms {
+  color: #0a2440;
+  font-family: hoves-demibold, sans-serif;
+  font-size: 18px;
+  position: relative;
+}
+.policy::after,
+.terms::after {
+  position: absolute;
+  content: "";
+  display: block;
+  height: 1px;
+  width: 100%;
+  bottom: 0;
+  background-color: #0a2440;
+}
+@media (min-width: 1024px) {
+  .top,
+  .form-wrap {
+    flex-direction: row;
+  }
+  .footer-title {
+    font-size: 52px;
+  }
+  .footer-title,
+  .footer-desc {
+    text-align: inherit;
+  }
+  .footer-desc {
+    width: 466px;
+  }
+  .vertical {
+    display: block;
+  }
+  .form-wrap {
+    width: 698px;
+  }
+  .input-wrap {
+    width: 421px;
+  }
+  .footer-links-wrap {
+    width: 230px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .footer-links {
+    justify-content: flex-end;
+  }
+  .footer-link {
+    justify-content: flex-end;
+  }
+  .footer-logo {
+    height: 386px;
+  }
+  .bottom,
+  .regulation {
+    flex-direction: row;
+  }
+}
+@media (min-width: 1536px) {
+  .top,
+  .form-wrap {
+    flex-direction: row;
+  }
+  .footer-title {
+    font-size: 52px;
+  }
+  .footer-title,
+  .footer-desc {
+    text-align: inherit;
+  }
+  .footer-desc {
+    width: 466px;
+  }
+  .vertical {
+    display: block;
+  }
+  .form-wrap {
+    width: 698px;
+  }
+  .input-wrap {
+    width: 421px;
+  }
+  .footer-links-wrap {
+    width: 230px;
+    justify-content: flex-end;
+    align-items: flex-start;
+  }
+  .footer-links {
+    justify-content: flex-end;
+  }
+  .footer-link {
+    justify-content: flex-end;
+  }
+  .footer-logo {
+    height: 386px;
+  }
+  .bottom,
+  .regulation {
+    flex-direction: row;
+  }
+}

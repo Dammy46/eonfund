@@ -1,0 +1,144 @@
+.app-about {
+  padding-top: 4rem;
+  min-height: 100vh;
+  background-color: #ffffff;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
+  position: relative;
+  margin-top: -38px;
+  z-index: 1;
+}
+.section-tag {
+  font-size: 20px;
+  color: #0a2440;
+}
+.section-desc {
+  font-size: 32px;
+  width: 100%;
+  margin-top: 20px;
+}
+.grid {
+  display: grid;
+  grid-template-columns: repeat(1, 1fr);
+  margin-top: 3.5rem;
+}
+.grid-item {
+  border: 1px solid #ececec;
+  padding: 3rem 1rem;
+  transition: all 0.2s ease-in;
+  cursor: pointer;
+}
+.grid-item:last-child {
+  padding: 0;
+  border: none;
+}
+.grid-item:hover {
+  background-color: #f0ffe7;
+}
+.grid-container {
+  max-width: 530px;
+  margin: auto;
+}
+.grid-box {
+  display: flex;
+  flex-direction: row-reverse;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+.grid-box .icon-wrap {
+  justify-content: flex-end;
+  margin-top: -36px;
+}
+.grid-box .icon-wrap svg {
+  width: 50px;
+  fill: #0a2440;
+  height: 50px;
+  transform: rotate(-40deg);
+  transition: all 0.2s ease-in;
+}
+.grid-desc {
+  font-size: 20px;
+  width: 270px;
+  color: #0a2440;
+  opacity: 0.4;
+  transition: all 0.2s ease-in;
+}
+.grid-item:hover .grid-desc {
+  opacity: 1;
+}
+.grid-item:hover .grid-box .icon-wrap svg {
+  transform: rotate(0deg);
+}
+.grid-img {
+  height: 205px;
+}
+@media (max-width: 320px) {
+  .grid-desc {
+    width: 238px;
+  }
+}
+@media (min-width: 640px) {
+  .grid-container {
+    max-width: 640px;
+  }
+  .grid-img {
+    height: 378px;
+  }
+}
+
+@media (min-width: 1024px) {
+  .section-desc {
+    width: 850px;
+    font-size: 58px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container {
+    margin: 0 0 0 auto;
+    max-width: 490px;
+  }
+  .grid-item:nth-child(even) .grid-container {
+    margin: 0;
+  }
+  .grid-desc {
+    font-size: 30px;
+    width: 405px;
+  }
+  .grid-box .icon-wrap svg {
+    width: 58px;
+    height: 58px;
+  }
+  .grid-img {
+    height: 378px;
+  }
+}
+@media (min-width: 1536px) {
+  .section-desc {
+    width: 857px;
+    font-size: 60px;
+  }
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .grid-container {
+    max-width: 545px;
+    margin: 0 0 0 auto;
+  }
+  .grid-item:nth-child(even) .grid-container {
+    margin: 0 auto 0 0;
+  }
+  .grid-desc {
+    font-size: 30px;
+    width: 405px;
+  }
+  .grid-box .icon-wrap svg {
+    width: 58px;
+    height: 58px;
+  }
+  .grid-img {
+    height: 378px;
+  }
+}
