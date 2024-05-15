@@ -41,12 +41,16 @@ const Footer = () => {
       ],
     };
     axios
-      .post("https://api.mailjet.com/v3.1/send", data, {
-        headers: {
-          "Content-Type": "application/json",
-          Authorization: `Basic ${publicKey}:${secretKey}`,
-        },
-      })
+      .post(
+        "https://api.mailjet.com/v3//REST/contactslist/331297/managemanycontacts",
+        data,
+        {
+          headers: {
+            "Content-Type": "application/json",
+            Authorization: `Basic ${publicKey}:${secretKey}`,
+          },
+        }
+      )
       .then((response) => {
         console.log("Email sent:", response.data);
         setSending(false);
