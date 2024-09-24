@@ -18,13 +18,17 @@
   font-size: 32px;
   color: #0a2440;
   text-align: center;
+  font-family: worksans-medium, sans-serif;
+  font-weight: 500;
 }
 .footer-desc {
   color: #565656;
   font-size: 22px;
   width: auto;
   margin-top: 10px;
+  font-family: worksans-regular, sans-serif;
   text-align: center;
+  font-weight: 400;
 }
 .form-wrap {
   width: auto;
@@ -46,6 +50,8 @@
   outline: none;
   flex: 1;
   font-size: 18px;
+  font-family: worksans-regular, sans-serif;
+  font-weight: 400;
 }
 .input-wrap input:focus,
 .input-wrap input:active,
@@ -90,11 +96,15 @@
   width: 141px;
   color: #565656;
   font-size: 16px;
+  font-family: worksans-regular, sans-serif;
+  font-weight: 400;
 }
 .footer-links {
   width: 100%;
   display: flex;
   justify-content: center;
+  font-family: worksans-regular, sans-serif;
+  font-weight: 400;
 }
 .footer-links-wrap {
   padding-top: 50px;
@@ -147,10 +157,14 @@
 .copyright {
   color: #656565;
   font-size: 18px;
+  font-family: worksans-regular, sans-serif;
+  font-weight: 400;
 }
 .regulation {
   gap: 30px;
   flex-direction: column;
+  font-family: worksans-medium, sans-serif;
+  font-weight: 500;
 }
 .policy,
 .terms {

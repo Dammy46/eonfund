@@ -6,9 +6,8 @@ import FooterLogo from "../../assets/svgs/footer-logo.svg";
 import { useLenis } from "@studio-freight/react-lenis";
 import { FaXTwitter } from "react-icons/fa6";
 import axios from "axios";
+
 const Footer = () => {
-  const secretKey = "a0d59f43aeaaeac6e7683403a9955183";
-  const publicKey = "6d90c12c6b1775632442321fc5e29029";
   const [sending, setSending] = useState(false);
   const [email, setEmail] = useState("");
   const lenis = useLenis(({ scroll }) => {});
@@ -20,47 +19,20 @@ const Footer = () => {
   const handleChange = (e) => {
     setEmail(e.target.value);
   };
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     setSending(true);
     e.preventDefault();
-    const data = {
-      Messages: [
-        {
-          From: {
-            Email: email,
-            // Name: "Dozie",
-          },
-          To: [
-            {
-              Email: "eonbrands1@gmail.com",
-            },
-          ],
-          Subject: `${email} subscribed to Eonfund`,
-          TextPart: `${email} joined Eonfund fans`,
-        },
-      ],
-    };
-    axios
-      .post(
-        "https://api.mailjet.com/v3//REST/contactslist/331297/managemanycontacts",
-        data,
-        {
-          headers: {
-            "Content-Type": "application/json",
-            Authorization: `Basic ${publicKey}:${secretKey}`,
-          },
-        }
-      )
-      .then((response) => {
-        console.log("Email sent:", response.data);
-        setSending(false);
-        alert("Email sent");
-      })
-      .catch((error) => {
-        console.error("Error sending email:", error);
-        setSending(false);
-        alert("Email not sent");
+
+    try {
+      await axios.post("/api/subscribe", {
+        email,
       });
+      alert("Subscription successful!");
+      setSending(false);
+    } catch (error) {
+      alert("Subscription failed. Please try again.");
+      setSending(false);
+    }
   };
   return (
     <section className="app-footer">

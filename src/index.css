@@ -14,6 +14,14 @@
   font-family: hoves-regular;
   src: url(../public/TTHoves-regular.ttf);
 }
+@font-face {
+  font-family: worksans-medium;
+  src: url(../public/WorkSans-Medium.ttf);
+}
+@font-face {
+  font-family: worksans-regular;
+  src: url(../public/WorkSans-Regular.ttf);
+}
 
 html,
 body {
